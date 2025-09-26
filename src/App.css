@@ -1,0 +1,372 @@
+/* src/App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Full centering layout */
+.centered-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px; /* Wider container */
+  padding: 0 1rem;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fc;
+}
+
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.app-header h1 {
+  color: #1a3c6e;
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.app-header p {
+  color: #555;
+  margin-top: 0.6rem;
+  font-size: 1.3rem;
+}
+
+/* Bigger Card – now more spacious */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dfe4ea;
+  max-width: 700px; /* Increased from 600px */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Home Page Cards Grid */
+.card-grid {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.action-card {
+  background: white;
+  border-radius: 18px;
+  padding: 2.4rem 2rem;
+  width: 340px; /* Bigger card */
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.action-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.action-card h2 {
+  font-size: 1.7rem;
+  color: #1a3c6e;
+  margin: 0.8rem 0;
+}
+
+.action-card p {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Method Cards (Aadhaar, DL, Biometric) */
+.method-grid {
+  display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.8rem;
+}
+
+.method-card {
+  background: white;
+  border-radius: 18px;
+  padding: 2.4rem 2rem;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
+  border-color: #007bff;
+}
+
+.method-icon {
+  font-size: 3.2rem;
+}
+
+.method-card h3 {
+  font-size: 1.6rem;
+  color: #1a3c6e;
+  margin: 0.9rem 0 0.7rem;
+}
+
+.method-card p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Back Button */
+.back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  color: #1a3c6e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 2.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #2d3748;
+  font-size: 1.25rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 1rem 1.4rem;
+  font-size: 1.25rem;
+  border: 1px solid #bfc9d9;
+  border-radius: 12px;
+  outline: none;
+  background-color: #f9fafb;
+  transition: all 0.3s;
+  height: 60px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.18);
+  background-color: white;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 1.6rem;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-block {
+  display: block;
+  margin-top: 1.2rem;
+}
+
+/* ABHA Card Preview – Bigger & Bolder */
+.abha-card-preview {
+  border: 2px solid #000;
+  padding: 2.2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  max-width: 480px;
+  margin: 2.5rem auto;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.abha-card-preview h3 {
+  margin-top: 0;
+  color: #1a3c6e;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.abha-card-preview .profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+  margin: 0.8rem auto;
+  display: block;
+}
+
+.abha-card-preview .detail {
+  margin: 0.6rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+  padding-left: 1.4rem;
+  font-weight: 500;
+}
+
+.qr-code {
+  width: 180px;
+  height: 180px;
+  margin: 1.6rem auto;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .centered-layout {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 2.2rem 1.8rem;
+    border-radius: 16px;
+    max-width: 90%;
+  }
+
+  .action-card,
+  .method-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 2rem 1.6rem;
+  }
+
+  .action-card h2,
+  .method-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .action-card p,
+  .method-card p {
+    font-size: 1.05rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 1.15rem;
+    padding: 0.9rem 1.2rem;
+    height: 56px;
+  }
+
+  .btn-primary {
+    font-size: 1.2rem;
+    padding: 0.9rem 1.4rem;
+  }
+
+  .abha-card-preview {
+    padding: 1.8rem;
+  }
+
+  .abha-card-preview .profile {
+    width: 110px;
+    height: 110px;
+  }
+
+  .qr-code {
+    width: 150px;
+    height: 150px;
+  }
+}
