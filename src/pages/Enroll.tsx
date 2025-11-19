@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Enroll = () => {
   const navigate = useNavigate();
   const [step, setStep] = useState(1); // 1: select method, 2: Aadhaar, 3: Aadhaar OTP, 4: Mobile, 5: Mobile OTP, 6: ABHA Address, 7: Profile
-  const [enrollmentMethod, setEnrollmentMethod] = useState<'aadhaar' | 'dl' | 'biometric'>('aadhaar');
+  // const [enrollmentMethod, setEnrollmentMethod] = useState<'aadhaar' | 'dl' | 'biometric'>('aadhaar');
 
   const [aadhaarNumber, setAadhaarNumber] = useState('');
   const [aadhaarOtp, setAadhaarOtp] = useState('');
