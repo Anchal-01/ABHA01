@@ -30,7 +30,7 @@ const Enroll = () => {
   };
 
   const handleSelectMethod = (method: 'aadhaar' | 'dl' | 'biometric') => {
-    setEnrollmentMethod(method);
+    // setEnrollmentMethod(method);
     if (method === 'aadhaar') {
       setStep(2);
     } else {
